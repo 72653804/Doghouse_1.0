@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>DogHouse Veterinaria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+<h1 class="bienvenida-oscura">🐾 Bienvenido a <span>DogHouse</span> 🐶</h1>
+
+
+    <nav>
+      <button onclick="mostrarSeccion('inicio')">Inicio</button>
+      <button onclick="mostrarSeccion('nosotros')">Nosotros</button>
+      <button onclick="mostrarSeccion('staff')">Staff Médico</button>
+      <button onclick="mostrarSeccion('servicios')">Servicios</button>
+      <button onclick="mostrarSeccion('cita')">Cita Médica</button>
+      
+    </nav>
+   <div class="auth-izquierda">
+  <button onclick="window.location.href='registro.html'">Registrarse</button>
+  <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+</div>
+  </header>
+
+
+
+
+
+  <!-- Inicio -->
+  <section id="inicio" class="seccion activa">
+  <h2 class="sombra-texto">BIENVENIDO A DOGHOUSE</h2>
+  <p>Tu veterinaria de confianza para el cuidado integral de tus mascotas.</p>
+
+ <div class="carrusel-contenedor">
+  <button class="flecha izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
+
+  <div class="carrusel-imagenes">
+    <img class="carrusel-item activo" src="/image/mascota1.jpg" alt="Perro feliz">
+    <img class="carrusel-item" src="/image/mascota2.webp" alt="Cachorro dormido">
+    <img class="carrusel-item" src="/image/mascota3.jpg" alt="Veterinario con perro">
+  </div>
+
+  <button class="flecha derecha" onclick="moverCarrusel(1)">&#10095;</button>
+</div>
+
+
+ 
+
+  <h3 class="titulo-seccion">¿Qué pasa si no llevas a tu mascota al veterinario?</h3>
+
+  <div class="problemas-container">
+
+    <div class="problema">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="Vacunas" />
+      <div>
+        <h4>Enfermedades por falta de vacunas</h4>
+        <p>Sin vacunación, tu mascota queda expuesta a virus como la rabia, parvovirus o moquillo.</p>
+      </div>
+    </div>
+
+    <div class="problema">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Desnutrición" />
+      <div>
+        <h4>Problemas de alimentación</h4>
+        <p>Una dieta mal balanceada puede provocar obesidad o desnutrición, reduciendo su calidad de vida.</p>
+      </div>
+    </div>
+
+    <div class="problema">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Parásitos" />
+      <div>
+        <h4>Infestación de parásitos</h4>
+        <p>Las pulgas, garrapatas y lombrices afectan la piel, la sangre y órganos internos.</p>
+      </div>
+    </div>
+
+    <div class="problema">
+      <img src="https://cdn-icons-png.flaticon.com/512/3940/3940419.png" alt="Salud bucal" />
+      <div>
+        <h4>Mal aliento y pérdida de dientes</h4>
+        <p>No cuidar su higiene dental puede causar infecciones, dolor y caída de piezas dentales.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Nosotros -->
+
+<section id="nosotros" class="seccion">
+  <h2 class="sombra-texto">🐾 NOSOTROS 🐶</h2>
+
+
+  <div class="nosotros-cuadro">
+
+    <div class="nosotros-contenido">
+
+      <div class="nosotros-texto">
+        <p><strong>DogHouse Veterinaria</strong> es una clínica comprometida con el bienestar de las mascotas desde 2015. Nuestro objetivo es brindar atención médica de calidad, cariño y respeto en cada consulta.</p>
+
+        <div class="valores-destacados">
+  <div class="valor">
+    <strong>🐾 Amor por los animales:</strong>
+    <p>Tratamos a cada mascota como parte de nuestra familia.</p>
+  </div>
+
+  <div class="valor">
+    <strong>🩺 Profesionales capacitados:</strong>
+    <p>Contamos con médicos especializados en diversas áreas.</p>
+  </div>
+
+  <div class="valor">
+    <strong>🏥 Infraestructura moderna:</strong>
+    <p>Equipos actualizados y ambiente libre de estrés.</p>
+  </div>
+
+  <div class="valor">
+    <strong>💡 Educación preventiva:</strong>
+    <p>Promovemos una cultura de prevención y cuidado responsable.</p>
+  </div>
+</div>
+
+        <p>En DogHouse, tu mascota está en las mejores manos. Gracias por confiar en nosotros.</p>
+      </div>
+
+      <div class="nosotros-imagen">
+        <img src="/image/mascota4.jpg" alt="Veterinaria DogHouse">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- Staff -->
+  <section id="staff" class="seccion">
+    <h2 class="sombra-texto">STAFF MEDICO</h2>
+<div class="staff-container">
+    <div class="medico">
+      <img src="/image/pro2.avif" alt="Dra. Ana Torres" class="foto-medico" />
+      <h3>Dra. Ana Torres</h3>
+      <p>Medicina interna felina y canina</p>
+    </div>
+    <div class="medico">
+      <img src="/image/pro1.avif" alt="Dr. Luis Rojas" class="foto-medico" />
+      <h3>Dr. Luis Rojas</h3>
+      <p>Cirujano veterinario</p>
+    </div>
+    <div class="medico">
+      <img src="/image/pro3.avif" alt="Lic. Carla Fernández" class="foto-medico" />
+      <h3>Lic. Carla Fernández</h3>
+      <p>Estética y grooming canino</p>
+    </div>
+  </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="seccion">
+    <h2 class="sombra-texto">SERVICIOS  </h2>
+    <ul>
+      <li>Consulta general</li>
+      <li>Vacunación</li>
+      <li>Desparasitación</li>
+      <li>Cirugías</li>
+      <li>Estética canina</li>
+      <li>Emergencias 24/7</li>
+    </ul>
+  </section>
+
+  <!-- Cita -->
+  <section id="cita" class="seccion">
+    <h2>Agendar Cita</h2>
+    <form id="formCita">
+      <input type="text" name="dueno" placeholder="Nombre del dueño" required />
+      <input type="text" name="mascota" placeholder="Nombre de la mascota" required />
+      <select name="tipo" required>
+        <option value="">Tipo de mascota</option>
+        <option>Perro</option>
+        <option>Gato</option>
+        <option>Otro</option>
+      </select>
+      <textarea name="motivo" placeholder="Motivo" required></textarea>
+      <input type="date" name="fecha" required />
+      <input type="time" name="hora" required />
+      <button type="submit">Reservar</button>
+    </form>
+    <p id="respuestaCita"></p>
+  </section>
+
+  <!-- Contacto -->
+ <footer>
+  <div class="contacto-footer">
+    <p>📍 Av. Las Mascotas 123, Lima</p>
+    <p>📞 (01) 123-4567</p>
+    <p>📧 contacto@doghouse.com</p>
+  </div>
+  <p>© 2025 DogHouse Veterinaria</p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
